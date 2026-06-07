@@ -1,0 +1,417 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#skip{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 1000;
+    left: -9999px;
+    top: 10px;
+}
+#skip:focus{
+    left: 10px;
+}
+nav{
+    background-color: rebeccapurple;
+    color: white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+}
+#login{
+    color: white;
+    padding: 10px 50px;
+    border: 2px solid rgb(242, 238, 238);
+}
+#login:focus{
+    border: 3px solid black;
+}
+#navDiv1{
+    height: 80px;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    /* background: #000; */
+}
+.nav1{
+  color: white;
+padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+#homeh1{
+    height: 400px;
+    width: 400px;
+    /* background: red; */
+    font-size: 100px;
+    /* position: absolute;
+    top: 20%; */
+    margin-left: 200px;
+}
+#HomeBg{
+    width: 1520px;
+    height: 520px;
+}
+#h1btn{
+     position: absolute;
+    top: 20%;
+}
+#bookapp{
+    /* position: absolute;
+    top: 75%; */
+    margin-left: 220px;
+    color: black;
+    padding: 10px 50px;
+    border: 2px solid rgb(109, 33, 189);
+}
+#bookapp:focus{
+    border: 3px solid black;
+}
+h2{
+    font-size: 40px;
+}
+#h2headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#carousel{
+    display: flex;
+    overflow: auto;
+    gap: 20px;
+    justify-content: start;
+    position: relative;
+    padding: 0 60px;
+}
+#carousel::-webkit-scrollbar{
+    display: none;
+}
+
+#carousel>div>img{
+    height: 500px;
+    width: 400px;
+}
+#carousel>div{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+h3{
+    padding: 10px;
+    font-size: 20px;
+}
+#btncarousel{
+    position: relative;
+    width: 100%;
+}
+#btncarousel>button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: rgba(255,255,255,0.8); */
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+}
+#btn1{
+    left: 20px;
+}
+
+#btn2{
+    position: absolute !important;
+    right: 20px !important;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: red; */
+}
+#carousel>div>a{
+    color: black;
+    padding: 10px;
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+    margin-top: 20px;
+}
+#loginh1div{
+    width: 100%;
+    height: 30%;
+    background: rebeccapurple;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#loginh1{
+    font-size: 50px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+form>input{
+  width: 500px;
+  padding: 8px;
+  margin-top: 5px;
+  box-shadow: 3px 3px rgb(172, 170, 170);
+}
+#contact{
+  margin-top: 30px;
+  margin-left: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+}
+#submitbtn{
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rebeccapurple;
+  color: white;
+}
+#submitbtn:focus{
+    border: 5px solid black;
+}
+#submit{
+  /* background: red; */
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  color: rgb(198, 17, 17);
+  font-size: 0.9rem;
+}
+#statusError{
+    color: rgb(41, 17, 17);
+    font-size: 2px;
+    background-color: yellow;
+}
+#uIcon>i{
+    /* background: rgb(15, 15, 13); */
+    /* width: 80px;
+    height: 40px; */
+    font-size: 30px;
+    padding: 10px;
+}
+#uIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+}
+#userMenu {
+    position: absolute;
+    top: 60px;
+    right: 150px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#userMenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#vivsAbt{
+    padding-left: 20px;
+}
+#pie{
+    padding-left: 440px;
+    /* background: red; */
+}
+.PieDes{
+    display: flex;
+}
+#purple{
+    color:rgb(135, 18, 161)
+}
+#blue{
+    color: rgb(75, 83, 196);
+}
+#red{
+    color: red;
+}
+#yellow{
+    color: rgb(255, 166, 0);
+}
+#green{
+    color: rgb(54, 126, 54);
+}
+#coloricons{
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+#kmbs{
+    /* background: red; */
+    margin-left: 600px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    padding: 20px;
+}
+#blogh1{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+}
+
+#accDiv{
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#accordion1id{
+    padding: 10px;
+    height: 70px;
+    font-size: 20px;
+    width: 1000px;
+}
+#sect1{
+    border: 2px solid black;
+    border-style: groove;
+    width: 60%;
+    font-size: 20px;
+}
+#accordion2id{
+    padding: 10px;
+    height: 70px;
+    font-size: 20px;
+    width: 1000px;
+}
+#sect2{
+    border: 2px solid black;
+    border-style: groove;
+    width: 60%;
+    font-size: 20px;
+}
+.panel1Hidden{
+    display: none !important;
+}
+.panel2Hidden{
+    display: none !important;
+}
+
+.modalhidden{
+    display: none !important;
+}
+#salesDialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    z-index: 1000;
+}
+
+#cards{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    /* width: 400px; */
+    height: 300px;
+    align-items: start;
+    padding: 30px;
+}
+#card1{
+  /* background: green; */
+  border: 2px solid black ;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+#card1>h2{
+    font-size: 30px;
+}
+#card2{
+    /* background: green; */
+  border: 2px solid black ;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+#card2>h2{
+    font-size: 30px;
+}
+
+#checkAva{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+#bookh1{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+#date{
+    display: flex;
+    
+    gap: 20px;
+}
+#dateselector{
+    padding: 30px;
+}
+#bookbtn{
+    height: 30px;
+}
+#startError,
+#endError {
+    color: red;
+}

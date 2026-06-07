@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs | Vivz Fashion School</title>
+    <link rel="stylesheet" href="beauty.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <a href="#main" id="skip">Skip To main content</a>
+    <header>
+      <nav aria-label="Primary">
+        <ul id="navDiv1">
+          <li>
+            <a class="nav1" href="./index.html">Home</a>
+          </li>
+          <li><a class="nav1" href="./contact.html">Contact Us</a></li>
+          <li><a class="nav1" href="">About Us</a></li>
+          <li>
+            <a class="nav1" href="./blogs.html" aria-current="page">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <h1 id="blogh1">Our Blogs</h1>
+      <div id="accDiv">
+        <h2>
+        <button
+          type="button"
+          aria-expanded="false"
+          class="accordion-trigger"
+          aria-controls="sect1"
+          id="accordion1id"
+        >
+          <span class="accordion-title">
+            How to buy on vivz fashion website
+            <span class="accordion-icon"></span>
+          </span>
+        </button>
+      </h2>
+       <div role="region" aria-labelledby="accordion1id"  id="sect1" class="panel1Hidden">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo recusandae obcaecati nostrum voluptatibus quia praesentium id vel? Ab fuga dignissimos corporis consequatur. Quidem officia saepe quod maiores eaque illo veniam nam odit. Odit eos voluptates sint alias, velit autem expedita.</p>
+        </div>
+
+        <h2>
+        <button
+          type="button"
+          aria-expanded="false"
+          class="accordion-trigger"
+          aria-controls="sect2"
+          id="accordion2id"
+        >
+          <span class="accordion-title">
+            Quality of Our Products
+            <span class="accordion-icon"></span>
+          </span>
+        </button>
+      </h2>
+       <div role="region" aria-labelledby="accordion2id"  id="sect2" class="panel2Hidden">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo recusandae obcaecati nostrum voluptatibus quia praesentium id vel? Ab fuga dignissimos corporis consequatur. Quidem officia saepe quod maiores eaque illo veniam nam odit. Odit eos voluptates sint alias, velit autem expedita.</p>
+        </div>
+      </div>
+      
+    </main>
+    <footer>@ Copyright</footer>
+    <script src="./blog.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Vivz Fashion School</title>
+    <link rel="stylesheet" href="./beauty.css" />
+  </head>
+  <body>
+    <main>
+      <div id="loginh1div">
+        <h1 id="loginh1">Login to Vivz</h1>
+      </div>
+      <div id="contact">
+        <span id="formError" class="error" aria-live="polite"></span>
+        <p>* indicates mandatory fields</p>
+        <form id="from1" action="LoginHome.html" onsubmit="return validateForm();" novalidate>
+          <label for="name">Name<span>*</span></label>
+          <input
+            type="text"
+            id="name"
+            autocomplete="name"
+            onfocus="clearError('nameError')"
+            onblur="checkEmpty('name')"
+            required
+            aria-describedby="nameError"
+          />
+          <br />
+          <span id="nameError" class="error" aria-live="polite"></span>
+
+          <label for="email">Email<span>*</span></label>
+          <input
+            type="email"
+            id="email"
+            autocomplete="email"
+            onfocus="clearError('emailError')"
+            onblur="checkEmpty('email')"
+            required
+            aria-describedby="emailError"
+          />
+          <br />
+          <span id="emailError" class="error" aria-live="polite"></span>
+
+          <label for="number">Phone Number<span>*</span></label>
+          <input
+            type="number"
+            id="number"
+            autocomplete="number"
+            onfocus="clearError('numberError')"
+            onblur="checkEmpty('number')"
+            required
+            aria-describedby="numberError"
+          />
+          <br />
+          <span id="numberError" class="error" aria-live="polite"></span>
+
+          <div id="submit">
+            <button type="submit" id="submitbtn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./beauty.js"></script>
+  </body>
+</html>
